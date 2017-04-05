@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DCC104-2017 - (Exemplo 01)</title>
+    <link href="css/style.css" rel="stylesheet">      
+    <script src="js/Game.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="600" style="background:#000;  display: block; margin: 50px auto;"></canvas>
+    <script type="text/javascript">
+        var game = new Game();
+        game.init('canvas',600, 600);
+        function desenha(){
+            requestAnimationFrame(desenha);
+            game.desenha();
+        }
+        desenha();
+
+    </script>
+  </body>
+</html>
